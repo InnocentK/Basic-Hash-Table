@@ -1,0 +1,124 @@
+/*****************************************
+ ** File:    Driver.cpp
+ ** Project: CMSC 341 Project 5 - Hash Table Strategies & Performance, Spring 2018
+ ** Author:  Innocent Kironji
+ ** Date:    05/15/18
+ ** Section: 03      
+ ** E-mail:  wambugu1@umbc.edu
+ **
+ **   This file contains test code that checks if the functions of
+ **    the ProbeHashTable and ChainHashTable classes work properly
+ ** 
+ ***********************************************/
+#include "ChainHashTable.cpp"
+#include "ProbeHashTable.cpp"
+
+// A simple (and very poor) hash funcion to check for collisions
+// Using a bad hash function because more likely to cause collision
+unsigned int hFunc(const int& key){
+  unsigned int k = key;
+  return k;
+}
+
+int main(){
+  bool found;
+  unsigned int (*hashFunc)(const int& key) = &hFunc;
+  ChainHashTable<int> tchain(hashFunc, 5);
+  ProbeHashTable<int> tprobe(hashFunc, 5);
+
+  // Chain Hash Table
+  std::cout << "Testing empty table" << std::endl; 
+  tchain.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing insertion" << std::endl; 
+  tchain.insert(4);
+  tchain.insert(9);
+  tchain.insert(14);
+  tchain.insert(3);
+  tchain.insert(4);
+  tchain.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing copy constructor" << std::endl;
+  ChainHashTable<int> chaincopy(tchain);
+  chaincopy.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing deletion" << std::endl; 
+  std::cout << "Deleting 3" << std::endl;
+  tchain.remove(3, found);
+  tchain.dump();
+  std::cout << "Deleting 9" << std::endl;
+  tchain.remove(9, found);
+  tchain.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing overloaded assignment (tchain to chaincopy)" << std::endl;
+  ChainHashTable<int> chainassign(tchain);
+  chainassign = chaincopy;
+  chainassign.dump();
+
+  
+  std::cout << std::endl;
+  std::cout << "Testing find" << std::endl; 
+  if ( tchain.find(4) )
+    std::cout << "Found 4" << std::endl;
+  else
+    std::cout << "Could not find 4" << std::endl;
+
+  if ( tchain.find(35) )
+    std::cout << "Found 35" << std::endl;
+  else
+    std::cout << "Could not find 35" << std::endl;
+
+
+  // Probe Hash Table
+  std::cout << "Testing empty table" << std::endl; 
+  tprobe.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing insertion" << std::endl; 
+  tprobe.insert(4);
+  tprobe.insert(9);
+  tprobe.insert(14);
+  tprobe.insert(3);
+  tprobe.insert(4);
+  tprobe.insert(7);
+  //tprobe.insert(8);
+  tprobe.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing copy constructor" << std::endl;
+  ProbeHashTable<int> probecopy(tprobe);
+  probecopy.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing deletion" << std::endl; 
+  std::cout << "Deleting 3" << std::endl;
+  tprobe.remove(3, found);
+  tprobe.dump();
+  std::cout << "Deleting 9" << std::endl;
+  tprobe.remove(9, found);
+  tprobe.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing overloaded assignment (tprobe to probecopy)" << std::endl;
+  ProbeHashTable<int> probeassign(tprobe);
+  probeassign = probecopy;
+  probeassign.dump();
+
+  std::cout << std::endl;
+  std::cout << "Testing find" << std::endl; 
+  if ( tprobe.find(4) )
+    std::cout << "Found 4" << std::endl;
+  else
+    std::cout << "Could not find 4" << std::endl;
+
+  if ( tprobe.find(35) )
+    std::cout << "Found 35" << std::endl;
+  else
+    std::cout << "Could not find 35" << std::endl;
+
+  return 0;
+}

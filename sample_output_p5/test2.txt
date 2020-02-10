@@ -1,0 +1,230 @@
+============================================================
+= After 58109 insertions
+(0 CPU ticks)
+============================================================
+============================================================
+[ProbeHashTable: Simple test]
+= After 80 insertions
+(0 CPU ticks)
+============================================================
+ProbeHashTable dump; size: 101 buckets
+[0]: EMPTY
+[1]: aardvark (1)
+[2]: EMPTY
+[3]: EMPTY
+[4]: EMPTY
+[5]: EMPTY
+[6]: EMPTY
+[7]: EMPTY
+[8]: EMPTY
+[9]: EMPTY
+[10]: abdicating (10)
+[11]: aaron (11)
+[12]: EMPTY
+[13]: abduction (13)
+[14]: abhor (14)
+[15]: abidjan (14)
+[16]: EMPTY
+[17]: abate (17)
+[18]: abbreviated (17)
+[19]: abeam (17)
+[20]: aberdeen (17)
+[21]: abide (20)
+[22]: ability (17)
+[23]: abducted (23)
+[24]: abductions (23)
+[25]: abbey (25)
+[26]: abandons (26)
+[27]: abduct (27)
+[28]: abdicated (28)
+[29]: abandonment (29)
+[30]: abjured (20)
+[31]: abasement (31)
+[32]: abbeys (31)
+[33]: abbreviates (32)
+[34]: EMPTY
+[35]: abbess (35)
+[36]: abattoir (36)
+[37]: abalone (37)
+[38]: abattoirs (38)
+[39]: abandoned (39)
+[40]: abbreviations (35)
+[41]: aberrant (41)
+[42]: aberrations (37)
+[43]: abbe (43)
+[44]: abdicates (43)
+[45]: abatement (45)
+[46]: abets (44)
+[47]: abbot (47)
+[48]: abbreviate (48)
+[49]: abel (48)
+[50]: abbots (50)
+[51]: abdication (50)
+[52]: EMPTY
+[53]: abided (53)
+[54]: abiding (54)
+[55]: abated (55)
+[56]: abet (56)
+[57]: abbreviating (57)
+[58]: abeyance (58)
+[59]: EMPTY
+[60]: EMPTY
+[61]: abdominal (61)
+[62]: EMPTY
+[63]: abacus (63)
+[64]: abashed (63)
+[65]: abductor (64)
+[66]: abhorred (65)
+[67]: abies (67)
+[68]: aback (68)
+[69]: abele (69)
+[70]: abates (70)
+[71]: abides (68)
+[72]: abhors (72)
+[73]: abject (63)
+[74]: abducting (74)
+[75]: abaft (75)
+[76]: abetting (75)
+[77]: aardwolf (77)
+[78]: abased (77)
+[79]: abdicate (78)
+[80]: abdomen (77)
+[81]: abandon (81)
+[82]: abducts (77)
+[83]: abhorrence (74)
+[84]: abhorrent (79)
+[85]: abase (85)
+[86]: abductors (86)
+[87]: EMPTY
+[88]: abash (88)
+[89]: abjectly (89)
+[90]: abe (90)
+[91]: abjure (90)
+[92]: EMPTY
+[93]: EMPTY
+[94]: EMPTY
+[95]: aberration (95)
+[96]: abdomens (96)
+[97]: abbreviation (97)
+[98]: abilities (95)
+[99]: EMPTY
+[100]: abetted (100)
+Total items: 80
+============================================================
+= After 58109 finds/removes
+  (~80% of buckets should be DELETED, rest EMPTY)
+(0 CPU ticks)
+============================================================
+ProbeHashTable dump; size: 101 buckets
+[0]: EMPTY
+[1]: DELETED
+[2]: EMPTY
+[3]: EMPTY
+[4]: EMPTY
+[5]: EMPTY
+[6]: EMPTY
+[7]: EMPTY
+[8]: EMPTY
+[9]: EMPTY
+[10]: DELETED
+[11]: DELETED
+[12]: EMPTY
+[13]: DELETED
+[14]: DELETED
+[15]: DELETED
+[16]: EMPTY
+[17]: DELETED
+[18]: DELETED
+[19]: DELETED
+[20]: DELETED
+[21]: DELETED
+[22]: DELETED
+[23]: DELETED
+[24]: DELETED
+[25]: DELETED
+[26]: DELETED
+[27]: DELETED
+[28]: DELETED
+[29]: DELETED
+[30]: DELETED
+[31]: DELETED
+[32]: DELETED
+[33]: DELETED
+[34]: EMPTY
+[35]: DELETED
+[36]: DELETED
+[37]: DELETED
+[38]: DELETED
+[39]: DELETED
+[40]: DELETED
+[41]: DELETED
+[42]: DELETED
+[43]: DELETED
+[44]: DELETED
+[45]: DELETED
+[46]: DELETED
+[47]: DELETED
+[48]: DELETED
+[49]: DELETED
+[50]: DELETED
+[51]: DELETED
+[52]: EMPTY
+[53]: DELETED
+[54]: DELETED
+[55]: DELETED
+[56]: DELETED
+[57]: DELETED
+[58]: DELETED
+[59]: EMPTY
+[60]: EMPTY
+[61]: DELETED
+[62]: EMPTY
+[63]: DELETED
+[64]: DELETED
+[65]: DELETED
+[66]: DELETED
+[67]: DELETED
+[68]: DELETED
+[69]: DELETED
+[70]: DELETED
+[71]: DELETED
+[72]: DELETED
+[73]: DELETED
+[74]: DELETED
+[75]: DELETED
+[76]: DELETED
+[77]: DELETED
+[78]: DELETED
+[79]: DELETED
+[80]: DELETED
+[81]: DELETED
+[82]: DELETED
+[83]: DELETED
+[84]: DELETED
+[85]: DELETED
+[86]: DELETED
+[87]: EMPTY
+[88]: DELETED
+[89]: DELETED
+[90]: DELETED
+[91]: DELETED
+[92]: EMPTY
+[93]: EMPTY
+[94]: EMPTY
+[95]: DELETED
+[96]: DELETED
+[97]: DELETED
+[98]: DELETED
+[99]: EMPTY
+[100]: DELETED
+Total items: 0
+============================================================
+[ProbeHashTable: Full test]
+= After 58109 insertions
+(3 CPU ticks)
+============================================================
+============================================================
+= After 58109 finds/removes
+  (~80% of buckets should be DELETED, rest EMPTY)
+(3 CPU ticks)
+============================================================
